@@ -4,6 +4,9 @@ A data-driven C++ motor model for drone flight simulation, built from publicly a
 
 ---
 
+> 🚧 **Work in Progress** — README and references complete. 
+> Code and Octave model coming soon.
+
 ## Table of Contents
 
 - [What This Is](#what-this-is)
