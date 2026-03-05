@@ -20,6 +20,7 @@ A data-driven C++ motor model for drone flight simulation, built from publicly a
 - [Model Accuracy](#model-accuracy)
 - [What This Model Does Not Yet Capture](#what-this-model-does-not-yet-capture)
 - [Iteration Roadmap](#iteration-roadmap-and-publishing-plan)
+- [References](#references)
 - [License](#license)
 
 
@@ -248,7 +249,7 @@ At 60°C operating temperature: R increases ~16%, reducing current and thrust at
 
 ---
 
-## Iteration Roadmap and Publishing Plan
+## Iteration Roadmap and publishing plan
 
 | Version | What changes | Requires |
 |---|---|---|
@@ -261,6 +262,19 @@ At 60°C operating temperature: R increases ~16%, reducing current and thrust at
 > v3.0 measurements planned on a real drone in a controlled environment (tethered test rig).
 > Results will be published on [meugenom.com](https://meugenom.com) as open-source data and code.
 
+---
+
+## References
+
+1. [T-Motor F1404 KV4600 — Stand Test Data](https://n-factory.de/T-Motor-F1404-4600KV-Ultra-Light-Motor)  
+   Manufacturer datasheet. Primary data source for this model.
+
+2. "A Comparative Study on Thrust Map Estimation for Multirotor Aerial Vehicles", Francisco J. Anguita, Rafael Perez-Segui, Carmen DR.Pita-Romero, Miguel Fernandez-Cortizas, Javier Melero-Deza , Pascual Campoy, pages 100-105, 16th INTERNATIONAL MICRO AIR VEHICLE CONFERENCE AND COMPETITION, http://www.imavs.org.
+
+3. "Modelling and Control of a Large Quadrotor Robot", P.Pounds , R.Mahonyb, P.Corke, September 2010, pages 1-26.
+
+4. Propeller Performance Data at Low Reynolds Numbers, John B. Brandt∗and Michael S. Selig, AIAA 2011-1255, pages 1-18.
+   
 ---
 
 ## License
