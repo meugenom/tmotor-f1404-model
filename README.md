@@ -54,8 +54,8 @@ The model is intended for use in drone simulators where realistic motor behavior
 
 | File | Description |
 |------|-------------|
-| [MOTOR_SPEC.md](MOTOR_SPEC.md) | Motor specifications and raw datasheet test report |
-| [MOTOR_CALC.md](MOTOR_CALC.md) | Model derivation: math, pipeline, voltage scaling |
+| [MOTOR_SPEC.md](./MOTOR_SPEC.md) | Motor specifications and raw datasheet test report |
+| [MOTOR_CALC.md](./MOTOR_CALC.md) | Model derivation: math, pipeline, voltage scaling |
 
 ---
 
