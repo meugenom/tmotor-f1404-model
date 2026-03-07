@@ -137,9 +137,9 @@ $$I[A] = MOTOR\_TAB\_STROM(throttle) \cdot \left(\frac{V}{V_{nom}}\right)^2$$
 The model uses a 2nd-degree polynomial fit, which provides a smooth transition between points. While it introduces a small mathematical deviation (approx. 5%) compared to raw datasheet values, it prevents step-response artifacts in PID controllers during simulation.
 
 ```sh
-cmake -S . -B build
-cmake --build build
-./build/test_motor
+cd build && rm -rf * && cmake ..
+make -j$(sysctl -n hw.ncpu)
+./test_motor
 ```
 
 Expected output (all green):
