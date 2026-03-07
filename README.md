@@ -98,13 +98,13 @@ Both public functions do the same thing: O(1) table lookup + linear interpolatio
 
 **Thrust** scales with $V^2$ because $F \propto RPM^2 \propto V^2$ (KV law under propeller load):
 
-$$F[N] = MOTOR\_TAB\_SCHUB\_N(throttle) \cdot \left(\frac{V}{V_{nom}}\right)^2$$
+$$F[N] = \texttt{MOTOR\_TAB\_SCHUB\_N}(throttle) \cdot \left(\frac{V}{V_{nom}}\right)^2$$
 
 The conversion from grams to Newtons (`× 9.81 / 1000`) is done once in Octave during table generation — not at runtime.
 
 **Current** scales with $V^2$ because $I \propto \omega^2 \propto V^2$ (propeller drag torque $M_{prop} \propto \omega^2$, motor torque $I = M/k_T$):
 
-$$I[A] = MOTOR\_TAB\_STROM(throttle) \cdot \left(\frac{V}{V_{nom}}\right)^2$$
+$$I[A] = \texttt{MOTOR\_TAB\_STROM}(throttle) \cdot \left(\frac{V}{V_{nom}}\right)^2$$
 
 ---
 
