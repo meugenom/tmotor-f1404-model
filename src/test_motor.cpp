@@ -9,7 +9,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include "motor.h"
-#include "../includes/motor_lut.h"
+#include "motor_lut.h"
 
 // ANSI Farben für bessere Lesbarkeit der Testergebnisse
 #define COL_GREEN "\033[32m"
@@ -20,7 +20,8 @@
 static constexpr float TOLERANCE = 0.05f;
 
 bool approxEqual(float actual, float expected, float tol) {
-    return fabs(actual - expected) / expected < tol;
+    if (expected == 0.0f) return fabs(actual) < tol;
+    return fabs(actual - expected) / fabs(expected) < tol;
 }
 
 // Ersetzen assert() — druckt das Ergebnis und beendet das Programm bei einem Fehler
